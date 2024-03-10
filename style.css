@@ -1,0 +1,298 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-image: url();
+  background-color: #000000;
+  color: #f5f3f4;
+}
+
+.page {
+  background-color: #660708;
+}
+
+.standard {
+  padding: 0.625rem;
+}
+
+/* Navigation Bar */
+#navbar {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.navbar-brand {
+  margin-right: 20rem;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+/* Home */
+#welcome_section {
+  width: auto;
+  height: 31.25rem;
+  color: #f5f3f4;
+  background-image: url(https://img.freepik.com/free-photo/empty-dark-room-modern-futuristic-sci-fi-background_35913-2410.jpg?w=900&t=st=1674386844~exp=1674387444~hmac=851ce4c414ca05dfd0c1675e4f0fef40627ad34b98a2604b7ca3c0ed50b80083);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* giving TEDx part in welcome_section a red color with its blur shadow */
+.tedx {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #e5383b;
+  text-shadow: 0.125rem 0.125rem 0.5rem #e5383b;
+}
+
+/* Positioning the text in the center both vertically and horizontally */
+.heads {
+  font-family: "Playfair Display", serif;
+  min-height: 100vh;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f5f3f4;
+}
+
+/* border and text shadow of h2 element */
+.heads h2 {
+  text-shadow: 0.125rem 0.125rem 0.5rem #f5f3f4;
+  padding: 0.625rem;
+  /* border: 0.2em solid #f5f3f4;
+    border-radius: 0.3125em; */
+}
+
+/* About */
+
+#about {
+  background-color: #f5f3f4;
+}
+
+.about {
+  margin: 2vh 8vh 2vh 8vh;
+  padding: 2vh 2vh 8vh 2vh;
+  background-color: #161a1d;
+  border-radius: 1rem;
+}
+
+.about h3 {
+  margin: 4rem 1rem 1rem 1rem;
+}
+
+hr {
+  margin: 1rem 8rem;
+  color: #ffffff;
+  height: 0.6rem;
+  background: #ffffff;
+  border-radius: 0.2rem;
+}
+
+/* Talks */
+
+#talks iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 30rem;
+}
+#talks .about {
+  background-color: #0b090a;
+}
+
+#talks .about h3 {
+  letter-spacing: 0.2rem;
+  margin-bottom: 0rem;
+  padding-bottom: 0.4rem;
+  color: #ba181b;
+}
+
+#our_speakers h6 {
+  color: #f5f3f4;
+  padding-bottom: 1.5rem;
+}
+
+/* Gallery */
+
+#gallery {
+  background-color: #f5f3f4;
+}
+
+#carouselExampleAutoplaying {
+  margin: 4rem 4rem;
+  padding: 4rem 4rem;
+  align-items: center;
+  background-color: #161a1d;
+}
+#gallery img {
+  height: 31rem;
+  width: 26rem;
+}
+
+/* Venue */
+
+#venue {
+  background-color: #660708;
+}
+
+#address {
+  padding-top: 5rem;
+}
+
+#venue h3 {
+  color: #ba181b;
+  margin-bottom: 0.8rem;
+}
+
+#venue p {
+  margin-bottom: 0rem;
+}
+
+/* Contact Us */
+
+#contact_us {
+  background-color: #161a1d;
+}
+
+.contact_us {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+#contact_us ul {
+  padding: 0;
+  padding-left: 0;
+}
+
+#contact_us li {
+  list-style: none;
+  padding-left: 0;
+}
+
+#contact_us a {
+  text-decoration-line: none;
+  color: #f5f3f4;
+}
+
+.figure-caption {
+  color: #f5f3f4;
+}
+
+.social_media h4 {
+  padding-bottom: 1.2rem;
+}
+
+.social_media a {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  border-right: solid 0.1rem #d9d9d9;
+}
+
+.social_media a:last-of-type {
+  border: none;
+}
+
+/* footer */
+footer {
+  /* position:relative; */
+  /* height: 100px; */
+  padding: 3rem 2rem 1rem 2rem;
+  font-size: small;
+  text-align: center;
+  background-color: #000000;
+  color: #f5f3f4;
+}
+
+/* media quieries */
+@media (min-width: 210px) and (max-width: 449px) {
+  .social_media a {
+    padding-left: 1vh;
+    padding-right: 1vh;
+    border-right: solid 0.1rem #d9d9d9;
+  }
+
+  #venue iframe {
+    height: 200px;
+    width: 150px;
+  }
+}
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (min-width: 450px) and (max-width: 575.98px) {
+  .social_media a {
+    padding-left: 1vh;
+    padding-right: 1vh;
+    border-right: solid 0.1rem #d9d9d9;
+  }
+}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (min-width: 575.99px) and (max-width: 767.98px) {
+  .social_media a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-right: solid 0.1rem #d9d9d9;
+  }
+
+  .about {
+    margin: 2vh 4vh 2vh 4vh;
+    padding: 2vh 2vh 4vh 2vh;
+  }
+}
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (min-width: 767.99px) and (max-width: 991.98px) {
+  .social_media a {
+    padding-left: 4vh;
+    padding-right: 4vh;
+    border-right: solid 0.1rem #d9d9d9;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #carouselExampleAutoplaying {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar > .container-fluid {
+    width: 90%;
+  }
+
+  /* #about,
+   #talks {
+
+   } */
+
+  .about {
+    margin: 0;
+    padding: 0;
+  }
+
+  #gallery img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 210px) {
+  #venue iframe {
+    height: 100px;
+    width: 75px;
+  }
+}
